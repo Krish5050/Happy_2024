@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Day</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*.column {*/
+        /*    float: left;*/
+        /*    width: 50%;*/
+        /*    padding: 0 10px;*/
+        /*}*/
+        .myslide {
+            max-width: 300px;
+        }
+        .myslide img{
+            max-width: 100%;
+            /*height: available;*/
+            object-fit: contain;
+            display: block;
+        }
+        .containner {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "nav nav"
+                "title card"
+                "countdown countdown"
+                "footer footer";
+        }
+
+        .nav {
+            grid-area: nav;
+            height: 50px;
+            /* border: 1px solid black; */
+            /* background-color: #fff; */
+        }
+
+        .title {
+            grid-area: title;
+            padding: 30px;
+            height: 450px;
+            /* border: 1px solid black; */
+            background: #4e54c8;  
+            /* background-color: aquamarine; */
+        }
+
+        .card {
+            /* padding: 30px; */
+            grid-area: span;
+            height: 450px;
+            /* border: 1px solid black; */
+            background: #4e54c8;  
+            /* background-color: green; */
+        }
+
+        .countdown {
+            grid-area: countdown;
+            height: 300px;
+            /* background-color: cyan; */
+            /* border: 1px solid black; */
+        }
+
+        .footer {
+            grid-area: footer;
+            height: 30px;
+            /* background-color: grey; */
+            /* border: 1px solid black; */
+        }
+
+        @media only screen and (max-width:500px) {
+            .containner {
+                /* height: 500vh; */
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "nav"
+                    "title"
+                    "card"
+                    "countdown"
+                    "footer";
+            }
+
+            .title h1 {
+                font-size: 120px;
+            }
+
+            .title h2 {
+                font-size: 80px;
+            }
+            .title{
+                height: 500px;
+            }
+            .card{
+                height: 500px;
+            }
+            .button{
+                background-color: rgba(225, 225, 225, 0.4);
+            }
+            .button a{
+                text-decoration: none;
+                color: black;
+            }
+            footer{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                margin: 0;
+                text-align: center;
+            }
+            footer span{
+                color: crimson;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containner">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    Happy New Year<span> Miss Angry Queen</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Hey <b>My Love</b></h3>
+            <p>
+                Today is the very first day we are stepping together into a new year 2024. Last year I met with you and you
+                meant nothing, but slowly your aura has made me to fall in love with you. I am bad at expressing still I can say you are the one to whom I can Cherries. Today will you make a promise !!!<br>
+                Whatever happens, Don't misunderstand me. I want to stay with you ... forever 😘😘<br>
+                Will you ...
+            </p>
+            <p>Let's Step in ... Happy 2K24</p>
+        </div>
+
+        <div class="content">
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(1).jpg">
+            <p>I am hoping you have got a good heart, lovely days, and an amazing year!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(2).jpg">
+            <p>I wish you’ve got a partially filled glass of champagne in 2024!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(3).jpg">
+            <p>Let’s enter a new year wherein every day is a little life festival!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(4).jpg">
+            <p>Wish this year brings you more happiness !!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(5).jpg">
+            <p>You are the precious one, I have ever met</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(6).jpg">
+            <p>My love, don't underestimate yourself. You are the source of my strength.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(7).jpg">
+            <p>Life is short. Dream big and make the most of 2024!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(8).jpg">
+            <p>Happy New Year! 2024 is the beginning of a new chapter</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(9).jpg">
+            <p>The best is yet to come. Happy 2024!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(10).jpg">
+            <p>Have a sparkling New Year!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(11).jpg">
+            <p>New adventures are around the corner. Happy New Year!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(12).jpg">
+            <p>May the new year bless you with health, wealth, and happiness.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(13).jpg">
+            <p>May the new year bring you peace, joy, and happiness.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(14).jpg">
+            <p>Wishing you and yours health and prosperity in the new year.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(15).jpg">
+            <p>Always keep this smile on your face. It's fabulous.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(16).jpg">
+            <p>Roses are red, violets are blue. It's another year—what else is new?</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(17).jpg">
+            <p>We made it! Here's to more adventures together in 2024.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(18).jpg">
+            <p>Started from the bottom and now we're here.</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(19).jpg">
+            <p>I’m so proud of everything you accomplished this year, and can’t wait to see what you do in 2024!</p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(20).jpg">
+            <p>"Tomorrow, is the first blank page of a 365-page book. Write a good one!" </p>
+        </div>
+        <div class="myslide fade">
+            <img width="250px" height="300px" src="img/Piya%20(21).jpg">
+            <p>May you discover everything you are looking for in the new year right inside yourself!</p>
+        </div>
+        <br>
+        <script>
+            let si = 0;
+            showSlides();
+
+            function startFiringConfetti() {
+                const canvas = document.getElementsByClassName("myslide");
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                const ctx = canvas.getContext("2d");
+
+                const pieces = [];
+                const numberOfPieces = 200;
+                const colors = ["#f00", "#0f0", "#00f", "#ff0", "#0ff"];
+
+                function newPiece() {
+                    this.x = canvas.width * Math.random();
+                    this.y = canvas.height * Math.random() - canvas.height;
+                    this.rotation = Math.random() * 360;
+                    this.color =
+                        colors[Math.floor(Math.random() * colors.length)];
+                    this.diameter = Math.random() * 10 + 5;
+                    this.speed = this.diameter / 2;
+                    this.rise = 0;
+                    this.angle = 0;
+                }
+
+                for (let i = 0; i < numberOfPieces; i++) {
+                    pieces.push(new newPiece());
+                }
+
+                function updateNewPiece(piece) {
+                    piece.rotation += 0.5;
+                    piece.angle += 0.01;
+                    piece.rise += 0.5;
+                    piece.y -= piece.speed;
+                    piece.x += Math.sin(piece.angle) - 0.5 + Math.random();
+
+                    if (piece.y <= -20) {
+                        piece.y = canvas.height + 20;
+                        piece.x = Math.random() * canvas.width;
+                    }
+                }
+
+                function drawNewPiece(piece) {
+                    ctx.beginPath();
+                    ctx.lineWidth = piece.diameter;
+                    ctx.strokeStyle = piece.color;
+                    ctx.moveTo(piece.x + piece.diameter / 4, piece.y);
+                    ctx.lineTo(piece.x, piece.y + piece.diameter / 4);
+                    ctx.stroke();
+                    ctx.closePath();
+                }
+
+                function animateConfetti() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    pieces.forEach((piece) => {
+                        updateNewPiece(piece);
+                        drawNewPiece(piece);
+                    });
+
+                    requestAnimationFrame(animateConfetti);
+                }
+
+                animateConfetti();
+            }
+
+            function showSlides() {
+                let i;
+                var slides = document.getElementsByClassName("myslide");
+                for(i = 0; i < slides.length; i++){
+                    slides[i].style.display = "none";
+                }
+                si++
+                if(si > slides.length){
+                    si = 1;
+                }
+                let rand = Math.floor((Math.random() * slides.length));
+                slides[rand].style.display = "block"
+                setTimeout(showSlides, 1000)
+            }
+        </script>
+    </div>
+
+        <div class="footer">
+            <div class="area" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+    <script>
+        (function ($) {
+            $(function () {
+
+                //  open and close nav 
+                $('#navbar-toggle').click(function () {
+                    $('nav ul').slideToggle();
+                });
+
+
+                // Hamburger toggle
+                $('#navbar-toggle').on('click', function () {
+                    this.classList.toggle('active');
+                });
+
+
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+                    // Close dropdown when select another dropdown
+                    $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+                    e.stopPropagation();
+                });
+
+
+                // Click outside the dropdown will remove the dropdown class
+                $('html').click(function () {
+                    $('.navbar-dropdown').hide();
+                });
+            });
+        })(jQuery);
+
+
+    </script>
+</body>
+
+</html>
